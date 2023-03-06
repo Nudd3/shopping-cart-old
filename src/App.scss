@@ -60,11 +60,29 @@ nav {
 }
 
 .cart-button {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
   border-radius: 50%;
   background-color: white;
   border: 1px solid black;
   position: relative;
   margin-right: 3rem;
+}
+
+.cart-items {
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%);
+  font-size: 1rem;
+  font-weight: bold;
 }
