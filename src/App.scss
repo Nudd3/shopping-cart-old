@@ -33,7 +33,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: rgb(175, 175, 175);
   background-color: white;
   // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -85,4 +85,18 @@ nav {
   transform: translate(25%, 25%);
   font-size: 1rem;
   font-weight: bold;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-decoration: underline;
+  span {
+    font-size: 3rem;
+    font-weight: 400;
+    color:rgb(250, 44, 44);
+    
+    text-decoration: overline;
+    
+  }
 }
