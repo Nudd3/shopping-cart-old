@@ -67,7 +67,7 @@ export const Navbar = () => {
               ></path>{' '}
             </g>
           </svg>
-          <div className='cart-items'>{cartQuantity}</div>
+          <div className='cart-items-number'>{cartQuantity}</div>
         </button>
       )}
     </div>

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Tilt Neon', cursive, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -62,15 +63,19 @@ nav {
 .cart-button {
   width: 3.5rem;
   height: 3.5rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid black;
+  border: 3px solid black;
   position: relative;
   margin-right: 3rem;
+
+  &:hover {
+    background-color: red;
+  }
 }
 
-.cart-items {
+.cart-items-number {
   border-radius: 50%;
   background-color: red;
   display: flex;
@@ -90,13 +95,113 @@ nav {
 .title {
   font-size: 3rem;
   font-weight: 900;
+
   text-decoration: underline;
+
   span {
     font-size: 3rem;
     font-weight: 400;
     color:rgb(250, 44, 44);
-    
+      
     text-decoration: overline;
     
+  }
+}
+
+.shop-items-grid {
+  padding-top: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.item-card {
+  overflow: hidden;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  height: 100%;
+
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+
+  .item-card-image {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    vertical-align: middle;
+    width: 100%;
+    img {
+      
+      height: 250px;
+      width: 400px;
+    }
+  }
+
+  .item-card-body {
+    display: flex;
+    flex-direction: column;
+
+    .item-card-body-upper {
+      padding: 1rem 1rem 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .item-card-body-lower {
+      width: 100%;
+      padding: 1rem;
+
+      .add-button {
+        width: 100%;
+        background-color: hsl(228, 93%, 65%);
+        border: none;
+        padding: 0.5rem;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        
+        &:hover {
+          background-color: hsl(228, 100%, 59%);
+          cursor: pointer;
+        }
+      }
+
+      .item-card-body-lower-alternative {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        button {
+          padding: 0.65rem 3rem;
+        }
+
+        div {
+          font-size: 1.5rem;
+        }
+      }
+
+    }
   }
 }
