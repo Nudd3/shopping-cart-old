@@ -1,4 +1,5 @@
 import './App.scss';
+import { ShoppingCartProvider } from './context/shoppingCartContext';
 
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
@@ -9,7 +10,7 @@ import { About } from './pages/About';
 
 function App() {
   return (
-    <>
+    <ShoppingCartProvider>
       <Navbar />
       <div className='App'>
         <Routes>
@@ -18,7 +19,7 @@ function App() {
           <Route path='/about' element={<About />} />
         </Routes>
       </div>
-    </>
+    </ShoppingCartProvider>
   );
 }
 

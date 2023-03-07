@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
+import { useShoppingCart } from '../context/shoppingCartContext';
 
 export const Navbar = () => {
-  const cartQuantity = 1; // Temporary
+
+  const { cartQuantity } = useShoppingCart();
+
   return (
     <div className='navbar'>
       <nav>

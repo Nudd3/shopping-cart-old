@@ -9,6 +9,7 @@
 
 body {
   background-color: #eee;
+  background-color: whitesmoke;
 }
 
 .App {
@@ -133,6 +134,7 @@ nav {
 .item-card {
   overflow: hidden;
   background-color: #d8d8d8;
+  background-color: white;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -194,11 +196,24 @@ nav {
         gap: 0.5rem;
 
         button {
-          padding: 0.65rem 3rem;
+          padding: 0.4rem 1rem;
+          font-size: 1.5rem;
+          background-color: hsl(228, 93%, 65%);
+          border: none;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: hsl(228, 100%, 59%);
+            cursor: pointer;
+          }
         }
 
         div {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
+          span {
+            font-size: 1.2rem;
+            color: rgb(175, 175, 175);
+          }
         }
       }
 
