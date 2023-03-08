@@ -15,16 +15,38 @@ export const useShoppingCart = () => {
 //  increaseCartQuantity
 //  decreaseCartQuantity
 //  removeFromCart
-export const ShoppingCartProvider = ( { children } ) => {
+export const ShoppingCartProvider = ({ children }) => {
+  const [cartItems, setCartItems] = useState([]); // Store the items
 
-  const [cartItems, setCardItems] = useState( [] ) // Store the items
-
-  const cartQuantity = cartItems.length;
-
-  return (
-    <ShoppingCartContext.Provider value={{cartQuantity}}>
-      { children }
-    </ShoppingCartContext.Provider>
+    const cartQuantity = cartItems.reduce(
+    (quantity, item) => item.quantity + quantity, 0
   )
 
-}
+  const getItemQuantity = (id) => {
+    return cartItems.find(item => item.id === id)?.quantity || 0;
+  };
+
+  const increaseCartQuantity = (id) => {
+    setCartItems(currentItems => {
+      // If the item isn't already there, add it as a new one
+      if(currentItems.find(item => item.id === id) == null) {
+        return [...currentItems, { id, quantity: 1} ]
+      } else {
+        // We have an item
+        return currentItems.map(item => {
+          if (item.id === id) {
+            return { ...item, quantity: item.quantity + 1 }
+          } else {
+            return item
+          }
+        })
+      }
+    })
+  }
+
+  return (
+    <ShoppingCartContext.Provider value={{ cartQuantity, getItemQuantity, increaseCartQuantity }}>
+      {children}
+    </ShoppingCartContext.Provider>
+  );
+};

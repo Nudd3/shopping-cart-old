@@ -3,10 +3,11 @@ import { useShoppingCart } from '../context/shoppingCartContext';
 export const ShopItem = ({ id, name, price, imgUrl }) => {
 
   const {
-    cartQuantity,
+    getItemQuantity,
+    increaseCartQuantity
   } = useShoppingCart();
 
-  const quantity = cartQuantity;
+  const quantity = getItemQuantity(id);
 
   return (
     <div className='item-card'>
@@ -20,12 +21,12 @@ export const ShopItem = ({ id, name, price, imgUrl }) => {
         </div>
         <div className="item-card-body-lower">
           {quantity === 0 ? (
-            <button className='add-button'>Add To Cart</button>
+            <button className='add-button' onClick={() => increaseCartQuantity(id) }>Add To Cart</button>
           ):(
             <div className='item-card-body-lower-alternative'>
               <button>-</button>
               <div>{quantity}<span> in cart</span></div>
-              <button>+</button>
+              <button onClick={() => increaseCartQuantity(id) }>+</button>
             </div>
           )
         }
