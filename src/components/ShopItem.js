@@ -1,4 +1,4 @@
-import { useShoppingCart } from '../context/shoppingCartContext';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 
 export const ShopItem = ({ id, name, price, imgUrl }) => {
 
