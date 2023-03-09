@@ -4,7 +4,8 @@ export const ShopItem = ({ id, name, price, imgUrl }) => {
 
   const {
     getItemQuantity,
-    increaseCartQuantity
+    increaseCartQuantity,
+    decreaseCartQuantity
   } = useShoppingCart();
 
   const quantity = getItemQuantity(id);
@@ -24,7 +25,7 @@ export const ShopItem = ({ id, name, price, imgUrl }) => {
             <button className='add-button' onClick={() => increaseCartQuantity(id) }>Add To Cart</button>
           ):(
             <div className='item-card-body-lower-alternative'>
-              <button>-</button>
+              <button onClick={() => decreaseCartQuantity(id)}>-</button>
               <div>{quantity}<span> in cart</span></div>
               <button onClick={() => increaseCartQuantity(id) }>+</button>
             </div>

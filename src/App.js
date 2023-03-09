@@ -1,5 +1,5 @@
 import './App.scss';
-import { ShoppingCartProvider } from './context/shoppingCartContext';
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
@@ -9,6 +9,7 @@ import { About } from './pages/About';
 
 
 function App() {
+
   return (
     <ShoppingCartProvider>
       <Navbar />
