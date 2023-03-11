@@ -6,7 +6,6 @@ export const Shop = () => {
     <div className='shop'>
       <div className='shop-items-grid'>
         {shopItems.map((item) => (
-          // <h2 key={item.id}>{JSON.stringify(item)}</h2>
           <ShopItem key={item.id} {...item}/>
         ))}
       </div>

@@ -3,7 +3,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext';
 
 export const Navbar = () => {
 
-  const { cartQuantity } = useShoppingCart();
+  const { openCart, cartQuantity } = useShoppingCart();
 
   return (
     <div className='navbar'>
@@ -23,7 +23,7 @@ export const Navbar = () => {
         </div>
       </nav>
       {cartQuantity > 0 && (
-        <button className='cart-button'>
+        <button className='cart-button' onClick={openCart}>
           <svg
             viewBox='-2.4 -2.4 28.80 28.80'
             fill='none'

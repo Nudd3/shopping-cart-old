@@ -7,9 +7,22 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body, #root {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 body {
   background-color: #eee;
   background-color: whitesmoke;
+  
 }
 
 .App {
@@ -60,6 +73,12 @@ nav {
     color: grey;
   }
 }
+.active {
+  color: red;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
 
 .cart-button {
   width: 3.5rem;
@@ -224,5 +243,64 @@ nav {
       }
 
     }
+  }
+}
+
+.cart-view-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(18, 18, 18, 0.442);
+}
+
+.shopping-cart-container {
+  position: absolute;
+  color: red;
+  min-height: 100%;
+  background-color: white;
+  top: 0;
+  left: 75%;
+  right: 0;
+  z-index: 1;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .cart-header {
+    padding: 2rem 2rem 2rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 2rem;
+      color: black;
+    }
+
+    button {
+      border: none;
+      padding: 0.7rem;
+      border-radius: 10px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .cart-body {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .cart-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
