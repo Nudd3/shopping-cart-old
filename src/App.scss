@@ -72,7 +72,7 @@ nav {
   gap: 3rem;
   
   @media (max-width: 576px) {
-    margin-right: 3rem;
+    padding-right: 4rem;
   }
 
   .links {
@@ -298,12 +298,16 @@ nav {
 
   animation: cart-slide-enter 0.4s linear 1;
 
-  
+  @media (max-width: 576px) {
+    min-width: 100%;
+    height: auto;
+    right: 0;
+  }
 
 
 
   .cart-header {
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 2rem;
     width: 100%;
     display: flex;
     align-items: center;

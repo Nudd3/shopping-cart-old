@@ -29,3 +29,4 @@ For the different items in the shop I've used images from:
 * Home Page
 * About Page
 * Add local storage hook
+* Find a better font
