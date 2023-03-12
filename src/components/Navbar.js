@@ -15,12 +15,14 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className='nav-links'>
-          <Link to={'/shop'} className='nav-link'>
-            Shop
-          </Link>
-          <Link to={'/about'} className='nav-link'>
-            About
-          </Link>
+          <div className="links">
+            <Link to={'/shop'} className='nav-link'>
+              Shop
+            </Link>
+            <Link to={'/about'} className='nav-link'>
+              About
+            </Link>
+          </div>
 
           <button className='cart-button' onClick={openCart}>
             <svg
