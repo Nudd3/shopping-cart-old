@@ -63,6 +63,12 @@ export const ShoppingCartProvider = ({ children }) => {
     });
   };
 
+  const removeFromCart = (id) => {
+    setCartItems(currentItems => {
+      return currentItems.filter(item => item.id !== id);
+    } )
+  }
+
   const openCart = () => setCartIsOpen(true);
   const closeCart = () => setCartIsOpen(false);
   return (
@@ -74,6 +80,7 @@ export const ShoppingCartProvider = ({ children }) => {
         decreaseCartQuantity,
         openCart,
         closeCart,
+        removeFromCart,
         cartItems
       }}
     >
