@@ -22,5 +22,29 @@
     "name": "Notebook",
     "price": 5.00,
     "imgUrl": "/images/notebook.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Flashlight",
+    "price": 4.29,
+    "imgUrl": "/images/flashlight.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Knife",
+    "price": 10.00,
+    "imgUrl": "/images/knife.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Water Bottle",
+    "price": 3.49,
+    "imgUrl": "/images/water-bottle.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Rope",
+    "price": 2.39,
+    "imgUrl": "/images/rope.jpg"
   }
 ]

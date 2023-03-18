@@ -23,7 +23,7 @@ export const CartItem = ( { id, quantity }) => {
           </div>
 
           <div className="cart-item-info-right">
-            <h3>${item.price * quantity}</h3>
+            <h3>${(item.price * quantity).toFixed(3)}</h3>
             <button onClick={() => removeFromCart(id)}>X</button>
           </div>
         </div>
