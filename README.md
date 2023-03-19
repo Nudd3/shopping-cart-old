@@ -26,8 +26,9 @@ For the different items in the shop I've used images from:
 * 
 
 # Todo
-* Add more items to the shop
-* Home page
-* About page
+* [x] Add more items to the shop
+* [x] Home page
+* [x] About page
+* [x] Responsiveness
 * Add local storage hook
 * [x] Find a better font
