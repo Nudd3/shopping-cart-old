@@ -3,6 +3,12 @@
 
 $large-screen: 1200px;
 $small-screen: 576px;
+$main-background: #eee;
+$main-blue: hsl(228, 93%, 65%);
+$hover-blue: hsl(228, 100%, 59%);
+$main-gray: #b8b8b8;
+$main-red: rgb(250, 44, 44);
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +26,7 @@ html {
 
 body {
   min-height: 100%;
-  background-color: #eee;
-  // background-color: whitesmoke;
+  background-color: $main-background;
 }
 
 .App {
@@ -35,9 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgb(175, 175, 175);
   background-color: white;
-  // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   
 }
@@ -48,7 +51,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: rgb(175, 175, 175);
+  color: $main-gray;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
@@ -96,16 +99,16 @@ nav {
 .nav-link {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
 
   &:hover {
     color: grey;
   }
-}
-.active {
-  color: red;
-  text-decoration: none;
-  font-size: 1.2rem;
+
+  @media (max-width: $small-screen) {
+    font-size: 1.4rem;
+  }
 }
 
 .cart-button {
@@ -144,14 +147,16 @@ nav {
 
 .title {
   font-size: 3rem;
-  font-weight: 900;
-
-  text-decoration: underline;
-
+  font-weight: 400;
+  
+  &:hover {
+    color: black;
+  }
+  
   span {
     font-size: 3rem;
-    font-weight: 400;
-    color: rgb(250, 44, 44);
+    font-weight: 900;
+    color: $main-red;
 
     text-decoration: overline;
   }
@@ -180,7 +185,6 @@ nav {
 
 .item-card {
   overflow: hidden;
-  background-color: #d8d8d8;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -222,7 +226,7 @@ nav {
 
       .add-button {
         width: 100%;
-        background-color: hsl(228, 93%, 65%);
+        background-color: $main-blue;
         color: black;
         border: none;
         padding: 0.5rem;
@@ -230,7 +234,7 @@ nav {
         font-size: 1.5rem;
 
         &:hover {
-          background-color: hsl(228, 100%, 59%);
+          background-color: $hover-blue;
           cursor: pointer;
         }
       }
@@ -245,12 +249,12 @@ nav {
           color: black;
           padding: 0.5rem 1rem;
           font-size: 1.5rem;
-          background-color: hsl(228, 93%, 65%);
+          background-color: $main-blue;
           border: none;
           border-radius: 5px;
 
           &:hover {
-            background-color: hsl(228, 100%, 59%);
+            background-color: $hover-blue;
             cursor: pointer;
           }
         }
@@ -264,7 +268,7 @@ nav {
           gap: 0.35rem;
           span {
             font-size: 1.2rem;
-            color: rgb(175, 175, 175);
+            color: $main-gray;
           }
         }
       }
@@ -330,7 +334,7 @@ nav {
 
       &:hover {
         cursor: pointer;
-        color: rgb(175, 175, 175);
+        color: $main-gray;
       }
     }
   }
@@ -375,11 +379,11 @@ nav {
       flex-direction: column;
       justify-content: center;
       h3 {
-        color: rgb(175, 175, 175);
+        color: $main-gray;
       }
       span {
         font-size: 0.7em;
-        color: rgb(175, 175, 175);
+        color: $main-gray;
       }
     }
 
@@ -392,10 +396,10 @@ nav {
     }
 
     button {
-      border: 1px solid rgb(255, 40, 40);
+      border: 1px solid $main-red;
       border-radius: 5px;
       padding: 0.5rem 0.7rem;
-      color: rgb(255, 40, 40);
+      color: $main-red;
       background-color: white;
       &:hover {
         cursor: pointer;
@@ -429,7 +433,6 @@ nav {
 }
 
 .home-main {
-  // section
   position: relative;
   display: flex;
   justify-content: center;
@@ -438,7 +441,6 @@ nav {
 
 .home {
   background-image: url('../public/images/home-background.svg');
-  // z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -455,47 +457,61 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
+    
     .home-text-section {
 
-      border-radius: 8px;
+      width: 75%;
 
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: start;
-      gap: 2rem;
+
+      gap: 1rem;
 
       .initial {
         color: grey;
         font-size: 1.9rem;  
-      }
-      h2 {
-        font-size: 2rem;  
+
+        @media (max-width: $small-screen) {
+          font-size: 1.6rem;
+        }
       }
 
       .home-info {
         width: 50%;
         font-size: 2rem;
         line-height: 50px;
-        span {
-          font-weight: bold;
-          color: rgb(36, 105, 183);
+
+        @media (max-width: $small-screen) {
+          width: 100%;
         }
+
+        span:first-of-type {
+          font-weight: bold;
+          color: $main-blue;
+        }
+
+        span:last-of-type {
+          font-weight: bold;
+          color: $main-red;
+        }
+
       }
       .home-shop-button {
         border: none;
         justify-self: center;
         align-self: center;
-        background-color: hsl(228, 93%, 65%);
+        background-color: $main-blue;
+        color: black;
         padding: 1rem 1.5rem;
         border-radius: 8px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         cursor: pointer;
 
         &:hover {
-          background-color: #fff;
+          background-color: $hover-blue;
         }
       }
     }
