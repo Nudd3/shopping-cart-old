@@ -11,8 +11,8 @@ export const Home = () => {
             <span>
               "everyone can be needing anything, at any time, everywhere"
             </span>{' '}
-            we at Buy<span>Stuff</span> are always trying to improve our stash of stuff, to
-            fit your, and everyone elses needs.
+            we at Buy<span>Stuff</span> are always trying to improve our stash
+            of stuff, to fit your, and everyone elses needs.
           </p>
           <Link to={'/shop'}>
             <button className='home-shop-button'>Go To Shop</button>

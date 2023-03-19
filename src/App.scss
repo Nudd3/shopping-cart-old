@@ -41,8 +41,6 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-
-  
 }
 
 nav {
@@ -56,7 +54,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   position: fixed;
-  top:0;
+  top: 0;
   z-index: 1;
 
   @media (max-width: $small-screen) {
@@ -148,11 +146,11 @@ nav {
 .title {
   font-size: 3rem;
   font-weight: 400;
-  
+
   &:hover {
     color: black;
   }
-  
+
   span {
     font-size: 3rem;
     font-weight: 900;
@@ -458,9 +456,8 @@ nav {
     flex-wrap: wrap;
     gap: 10rem;
     padding-top: 3rem;
-    
-    .home-text-section {
 
+    .home-text-section {
       width: 75%;
 
       display: flex;
@@ -472,7 +469,7 @@ nav {
 
       .initial {
         color: grey;
-        font-size: 1.9rem;  
+        font-size: 1.9rem;
 
         @media (max-width: $small-screen) {
           font-size: 1.6rem;
@@ -497,7 +494,6 @@ nav {
           font-weight: bold;
           color: $main-red;
         }
-
       }
       .home-shop-button {
         border: none;
@@ -531,7 +527,6 @@ nav {
   background-size: cover;
   background-position: bottom;
 
-
   @media (max-width: $small-screen) {
     padding: 1rem;
   }
@@ -553,7 +548,8 @@ nav {
       gap: 2rem;
     }
 
-    .about-about, .about-images {
+    .about-about,
+    .about-images {
       width: 100%;
       display: flex;
       flex-direction: column;

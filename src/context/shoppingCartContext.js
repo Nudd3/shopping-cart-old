@@ -64,10 +64,10 @@ export const ShoppingCartProvider = ({ children }) => {
   };
 
   const removeFromCart = (id) => {
-    setCartItems(currentItems => {
-      return currentItems.filter(item => item.id !== id);
-    } )
-  }
+    setCartItems((currentItems) => {
+      return currentItems.filter((item) => item.id !== id);
+    });
+  };
 
   const openCart = () => setCartIsOpen(true);
   const closeCart = () => setCartIsOpen(false);
@@ -81,11 +81,11 @@ export const ShoppingCartProvider = ({ children }) => {
         openCart,
         closeCart,
         removeFromCart,
-        cartItems
+        cartItems,
       }}
     >
       {children}
-      <ShoppingCart cartIsOpen={cartIsOpen}/>
+      <ShoppingCart cartIsOpen={cartIsOpen} />
     </ShoppingCartContext.Provider>
   );
 };

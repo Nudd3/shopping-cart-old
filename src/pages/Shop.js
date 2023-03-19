@@ -6,7 +6,7 @@ export const Shop = () => {
     <div className='shop'>
       <div className='shop-items-grid'>
         {shopItems.map((item) => (
-          <ShopItem key={item.id} {...item}/>
+          <ShopItem key={item.id} {...item} />
         ))}
       </div>
     </div>
