@@ -1,7 +1,7 @@
 import './App.scss';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { Shop } from './pages/Shop';
