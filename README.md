@@ -48,7 +48,7 @@ For the different items in the shop I've used images from [Unsplash](https://uns
 - [x] Responsiveness
 - [] Add local storage
 - [x] Find a better font
-- [] Testing
+- [-] Testing
 - [x] Add Screenshots
 - [] Deploy to GitHub pages
 - [] Credit photos
