@@ -8,7 +8,7 @@ export const Navbar = () => {
     <div className='navbar'>
       <nav>
         <div className='nav-logo'>
-          <Link to={'/'} className='nav-link'>
+          <Link to='/' className='nav-link'>
             <h1 className='title'>
               Buy<span>Stuff</span>
             </h1>
@@ -16,10 +16,10 @@ export const Navbar = () => {
         </div>
         <div className='nav-links'>
           <div className='links'>
-            <Link to={'/shop'} className='nav-link'>
+            <Link to='/shop' className='nav-link'>
               Shop
             </Link>
-            <Link to={'/about'} className='nav-link'>
+            <Link to='/about' className='nav-link'>
               About
             </Link>
           </div>
