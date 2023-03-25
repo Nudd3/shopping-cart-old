@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from 'react';
 import { ShoppingCart } from '../components/ShoppingCart';
-
 const ShoppingCartContext = createContext({});
 
 // This is a Custom Hook

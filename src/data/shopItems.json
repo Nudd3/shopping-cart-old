@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Old Book",
     "price": 4.99,
-    "imgUrl": "/images/book.jpg"
+    "imgUrl": "../../public/images/book.jpg"
   },
   {
     "id": 2,
