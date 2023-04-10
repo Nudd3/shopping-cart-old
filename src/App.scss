@@ -438,7 +438,8 @@ nav {
 }
 
 .home {
-  background-image: url('../public/images/home-background.svg');
+  // background-image: url('../images/home-background.svg');
+  background-image: url('./images/home-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -522,7 +523,7 @@ nav {
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url('../public/images/home-background.svg');
+  background-image: url('./images/home-background.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
