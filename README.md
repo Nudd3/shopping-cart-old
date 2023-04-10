@@ -8,7 +8,7 @@ The vocal point of this project was to improve my knowledge with React and how t
 
 Both the Home page, as well as the About page may not look as good as it could have, but main focus was put on the Shop and ShoppingCart part of the project. 
 
-Try it out (here)[https://nudd3.github.io/shopping-cart/#/]
+Try it out [here](https://nudd3.github.io/shopping-cart/#/)
 
 ## Screenshots
 ### Home Page
