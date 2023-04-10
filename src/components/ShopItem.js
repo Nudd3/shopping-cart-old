@@ -1,6 +1,6 @@
 import { useShoppingCart } from '../context/ShoppingCartContext';
 
-export const ShopItem = ({ id, name, price, imgUrl }) => {
+export const ShopItem = ({ id, name, price, imgUrl, alt }) => {
   const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity } =
     useShoppingCart();
 
@@ -9,7 +9,7 @@ export const ShopItem = ({ id, name, price, imgUrl }) => {
   return (
     <div className='item-card'>
       <div className='item-card-image'>
-        <img src={require(imgUrl)} alt='' />
+        <img src={imgUrl} alt={alt} />
       </div>
       <div className='item-card-body'>
         <div className='item-card-body-upper'>

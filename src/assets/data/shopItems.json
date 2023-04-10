@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Old Book",
     "price": 4.99,
-    "imgUrl": "../assets/images/book.jpg",
+    "imgUrl": "../images/book.jpg",
     "alt": "an old looking book"
   },
   {
@@ -17,7 +17,7 @@
     "id": 3,
     "name": "Coffee Mug",
     "price": 2.99,
-    "imgUrl": "../assets/images/coffee-mug.jpg",
+    "imgUrl": "coffee-mug.jpg",
     "alt": "a good looking coffee mug"
   },
   {

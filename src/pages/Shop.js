@@ -1,4 +1,4 @@
-import shopItems from '../data/shopItems.json';
+import shopItems from '../assets/data/shopItems.json';
 import { ShopItem } from '../components/ShopItem';
 
 export const Shop = () => {
