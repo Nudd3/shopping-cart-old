@@ -3,42 +3,42 @@
     "id": 1,
     "name": "Old Book",
     "price": 4.99,
-    "imgUrl": "../../src/assets/images/book.jpg",
+    "imgUrl": "./shopping-cart/assets/images/book.jpg",
     "alt": "an old looking book"
   },
   {
     "id": 2,
     "name": "Chair",
     "price": 8.79,
-    "imgUrl": "./images/chair.jpg",
+    "imgUrl": "./shopping-cart/assets/images/chair.jpg",
     "alt": "a comfortable chair"
   },
   {
     "id": 3,
     "name": "Coffee Mug",
     "price": 2.99,
-    "imgUrl": "../images/coffee-mug.jpg",
+    "imgUrl": "./shopping-cart/coffee-mug.jpg",
     "alt": "a good looking coffee mug"
   },
   {
     "id": 4,
     "name": "Notebook",
     "price": 5.00,
-    "imgUrl": "assets/images/notebook.jpg",
+    "imgUrl": "shopping-cart/assets/images/notebook.jpg",
     "alt": "notebook for writing down thoughts"
   },
   {
     "id": 5,
     "name": "Flashlight",
     "price": 4.29,
-    "imgUrl": "../images/flashlight.jpg",
+    "imgUrl": "shopping-cart/images/flashlight.jpg",
     "alt": "can guide you through the darkness"
   },
   {
     "id": 6,
     "name": "Knife",
     "price": 10.00,
-    "imgUrl": "./images/knife.jpg",
+    "imgUrl": ".shopping-cart//images/knife.jpg",
     "alt": "a knife"
   },
   {
