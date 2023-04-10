@@ -10,21 +10,21 @@
     "id": 2,
     "name": "Chair",
     "price": 8.79,
-    "imgUrl": "./shopping-cart/assets/images/chair.jpg",
+    "imgUrl": "/shopping-cart/assets/images/chair.jpg",
     "alt": "a comfortable chair"
   },
   {
     "id": 3,
     "name": "Coffee Mug",
     "price": 2.99,
-    "imgUrl": "./shopping-cart/coffee-mug.jpg",
+    "imgUrl": "/shopping-cart/coffee-mug.jpg",
     "alt": "a good looking coffee mug"
   },
   {
     "id": 4,
     "name": "Notebook",
     "price": 5.00,
-    "imgUrl": "shopping-cart/assets/images/notebook.jpg",
+    "imgUrl": "/shopping-cart/images/notebook.jpg",
     "alt": "notebook for writing down thoughts"
   },
   {
