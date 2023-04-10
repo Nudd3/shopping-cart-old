@@ -1,6 +1,6 @@
 import { useShoppingCart } from '../context/ShoppingCartContext';
 import { CartItem } from './CartItem';
-import storeItems from '../data/shopItems.json'
+import storeItems from '../data/shopItems.json';
 export const ShoppingCart = ({ cartIsOpen }) => {
   const { closeCart, cartItems } = useShoppingCart();
 

@@ -24,7 +24,11 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <button data-testid='cartButton' className='cart-button' onClick={openCart}>
+          <button
+            data-testid='cartButton'
+            className='cart-button'
+            onClick={openCart}
+          >
             <svg
               viewBox='-2.4 -2.4 28.80 28.80'
               fill='none'
