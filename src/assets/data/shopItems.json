@@ -3,56 +3,56 @@
     "id": 1,
     "name": "Old Book",
     "price": 4.99,
-    "imgUrl": "../images/book.jpg",
+    "imgUrl": "images/book.jpg",
     "alt": "an old looking book"
   },
   {
     "id": 2,
     "name": "Chair",
     "price": 8.79,
-    "imgUrl": "../assets/images/chair.jpg",
+    "imgUrl": "images/chair.jpg",
     "alt": "a comfortable chair"
   },
   {
     "id": 3,
     "name": "Coffee Mug",
     "price": 2.99,
-    "imgUrl": "coffee-mug.jpg",
+    "imgUrl": "images/coffee-mug.jpg",
     "alt": "a good looking coffee mug"
   },
   {
     "id": 4,
     "name": "Notebook",
     "price": 5.00,
-    "imgUrl": "../assets/images/notebook.jpg",
+    "imgUrl": "images/notebook.jpg",
     "alt": "notebook for writing down thoughts"
   },
   {
     "id": 5,
     "name": "Flashlight",
     "price": 4.29,
-    "imgUrl": "../assets/images/flashlight.jpg",
+    "imgUrl": "images/flashlight.jpg",
     "alt": "can guide you through the darkness"
   },
   {
     "id": 6,
     "name": "Knife",
     "price": 10.00,
-    "imgUrl": "../assets/images/knife.jpg",
+    "imgUrl": "images/knife.jpg",
     "alt": "a knife"
   },
   {
     "id": 7,
     "name": "Water Bottle",
     "price": 3.49,
-    "imgUrl": "../assets/images/water-bottle.jpg",
+    "imgUrl": "images/water-bottle.jpg",
     "alt": "bottle for carrying water"
   },
   {
     "id": 8,
     "name": "Rope",
     "price": 2.39,
-    "imgUrl": "../assets/images/rope.jpg",
+    "imgUrl": "images/rope.jpg",
     "alt": "a rope"
   }
 ]
