@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Old Book",
     "price": 4.99,
-    "imgUrl": "/src/assets/images/book.jpg",
+    "imgUrl": "../../src/assets/images/book.jpg",
     "alt": "an old looking book"
   },
   {
@@ -31,28 +31,28 @@
     "id": 5,
     "name": "Flashlight",
     "price": 4.29,
-    "imgUrl": "./assets/images/flashlight.jpg",
+    "imgUrl": "../images/flashlight.jpg",
     "alt": "can guide you through the darkness"
   },
   {
     "id": 6,
     "name": "Knife",
     "price": 10.00,
-    "imgUrl": "../assets/images/knife.jpg",
+    "imgUrl": "./images/knife.jpg",
     "alt": "a knife"
   },
   {
     "id": 7,
     "name": "Water Bottle",
     "price": 3.49,
-    "imgUrl": "../../assets/images/water-bottle.jpg",
+    "imgUrl": "/images/water-bottle.jpg",
     "alt": "bottle for carrying water"
   },
   {
     "id": 8,
     "name": "Rope",
     "price": 2.39,
-    "imgUrl": "../../src/assets/images/rope.jpg",
+    "imgUrl": "rope.jpg",
     "alt": "a rope"
   }
 ]

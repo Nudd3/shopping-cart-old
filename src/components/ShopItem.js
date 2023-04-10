@@ -9,7 +9,7 @@ export const ShopItem = ({ id, name, price, imgUrl, alt }) => {
   return (
     <div className='item-card'>
       <div className='item-card-image'>
-        <img src={imgUrl} alt={alt} />
+        <img src={require(imgUrl)} alt={alt} />
       </div>
       <div className='item-card-body'>
         <div className='item-card-body-upper'>
