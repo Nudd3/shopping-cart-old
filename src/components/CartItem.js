@@ -1,4 +1,4 @@
-import shopItems from '../assets/data/shopItems.json';
+import shopItems from '../data/shopItems.json';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 
 export const CartItem = ({ id, quantity }) => {
